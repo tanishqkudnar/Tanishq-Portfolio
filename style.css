@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+section {
+    padding: 40px 8%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: darkblue;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 15px;
+}
+
+.navbar a:hover {
+    color: yellow;
+}
+
+/* Home */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: royalblue;
+    color: white;
+}
+
+.hero img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: royalblue;
+}
+
+.button:hover {
+    background-color: yellow;
+}
+
+/* About */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.about img {
+    width: 300px;
+}
+
+/* Skills and Projects */
+.skills {
+    background-color: lavender;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.card:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: lavender;
+}
+
+form {
+    width: 50%;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: royalblue;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background-color: darkblue;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    margin-left: 10px;
+}
+
+.footer a:hover {
+    color: yellow;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar,
+    .hero,
+    .about,
+    .contact,
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
